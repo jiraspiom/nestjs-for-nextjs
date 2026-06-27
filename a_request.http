@@ -1,8 +1,9 @@
+@baseUrl = http://localhost:3003
 
-GET http://localhost:3003
-
-###
-POST http://localhost:3003
+GET {{baseUrl}}
 
 ###
-POST http://localhost:3003/gbs/login
+POST {{baseUrl}}
+
+###
+POST {{baseUrl}}/gbs/login

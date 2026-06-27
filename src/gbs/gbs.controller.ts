@@ -7,7 +7,7 @@ export class GbsController{
     constructor(private readonly gbsService: GbsService){}
 
     @Post('login')
-    postGbs(){
-        return this.gbsService.postGbs();
+    async creatLogin(){
+        return await this.gbsService.createGbs();
     }
 }
