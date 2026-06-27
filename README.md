@@ -58,7 +58,16 @@ $ npm run test:cov
 ```
 
 ## Deployment
+```bash
+# create modulo users
+$ npx nest g mo users
 
+# create service users sem teste
+$ npx nest g s users --no-spec
+
+# create controle users sem teste
+$ npx nest g co users --no-spec
+```
 When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
 
 If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
