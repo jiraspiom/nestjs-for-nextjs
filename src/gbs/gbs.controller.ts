@@ -3,11 +3,10 @@ import { GbsService } from "./gbs.service";
 
 @Controller('gbs')
 export class GbsController{
-
     constructor(private readonly gbsService: GbsService){}
 
     @Post('login')
-    async creatLogin(){
+    async createLogin(){
         return await this.gbsService.createGbs();
     }
 }
